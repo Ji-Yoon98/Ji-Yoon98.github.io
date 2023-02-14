@@ -1,0 +1,68 @@
+# 1. React Component
+
+## Thinking in React
+
+> [Thinking in React](https://beta.reactjs.org/learn/thinking-in-react)
+
+- “Step 1: Break the UI into a component hierarchy”\
+   UI를 컴포넌트 계층구조로 쪼갠다.[컴포넌트 트리]
+- “Step 2: Build a static version in React”\
+   React로 정적인 버전으로 만들어라 
+
+## 데이터
+백엔드에서 JSON 형태의 데이터를 돌려주는 API를 제공한다고 가정(REST API or GraphQL)
+
+**REST API**
+
+- GET, POST, PUT/PATCH, DELETE (CRUD)
+- Resource 중심
+
+**GraphQL**
+
+- Graph 자료 구조
+- Query에서 얻고자 하는 걸 지정
+- Query(Read), Mutation(Command: Create, Update, Delete), Subscription(Event)
+
+**JSON API**
+[
+  { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
+  { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
+  { category: "Fruits", price: "$2", stocked: false, name: "Passionfruit" },
+  { category: "Vegetables", price: "$2", stocked: true, name: "Spinach" },
+  { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
+  { category: "Vegetables", price: "$1", stocked: true, name: "Peas" }
+]
+// 대부분 키로 쓸 수 있는 것을 넣음, 현재는 키로 쓸 수 있는게 없기 때문에 name을 씀
+
+F/E는 이 데이터를 사용자가 볼 수 있도록 UI를 구성한다. React는 선언형(HTML과 유사한 모양의 DSL을 사용)으로 UI를 구성할 수 있다.
+
+- [JSON](https://ko.wikipedia.org/wiki/JSON)
+- [JSON 개요](https://www.json.org/json-ko.html)
+
+
+```javascript
+request.open('GET', requestURL);
+request.responseType = 'text'; // now we're getting a string!
+request.send();
+
+request.onload = function() {
+  var superHeroesText = request.response; // get the string from the response
+  var superHeroes = JSON.parse(superHeroesText); // convert it to an object
+  populateHeader(superHeroes);
+  showHeroes(superHeroes);
+}
+```
+- parse(): JSON 문자열을 매개변수로서 수용하고, 일치하는 자바스크립트 객체로서 변환합니다.</br>
+
+```javascript
+var myJSON = { "name": "Chris", "age": "38" };
+myJSON
+var myString = JSON.stringify(myJSON);
+myString
+```
+- stringify(): 객체를 매개변수로서 수용하고, JSON 문자열 형태로 변환합니다.
+
+- [JSON으로 작업하기](https://developer.mozilla.org/ko/docs/Learn/JavaScript/Objects/JSON)
+
+- [명령형 프로그래밍](https://ko.wikipedia.org/wiki/명령형_프로그래밍)
+- [선언형 프로그래밍](https://ko.wikipedia.org/wiki/선언형_프로그래밍)
