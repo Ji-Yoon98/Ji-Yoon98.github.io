@@ -22,7 +22,7 @@ title_separator          : "&#124;"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "YUN_BLOG"
 description              : "YUN_BLOG"
-url                      : "https://parkji-yun.github.io"
+url                      : "https://Ji-Yoon98.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "/parkji-yun.github.io"
 teaser                   : #
