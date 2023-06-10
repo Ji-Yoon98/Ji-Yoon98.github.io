@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "Home"
-    url: https://parkji-yun.github.io/
+    url: https://Ji-Yoon98.github.io
 
   - title: "About"
     url: /about/
 
   - title: "GitHub"
-    url: https://github.com/parkji-yun
+    url: https://github.com/Ji-Yoon98
 
   # - title: "Projects"
   #   url: /projects/
