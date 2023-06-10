@@ -24,7 +24,7 @@ name                     : "YUN_BLOG"
 description              : "YUN_BLOG"
 url                      : "https://Ji-Yoon98.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "/parkji-yun.github.io"
+repository               : "/Ji-Yoon98.github.io"
 teaser                   : #
 # logo                     : "/assets/images/meee.svg" 
 #"/assets/images/monster.png"
