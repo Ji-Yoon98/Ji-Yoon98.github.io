@@ -16,8 +16,8 @@ comments: false
           <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">  Seoul, Korea</span>
         </li>
         <li>
-          <a href="https://github.com/parkJi-yun" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label"> https://github.com/parkJi-yun</span>
+          <a href="https://github.com/Ji-Yoon98" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label"> https://github.com/Ji-Yoon98</span>
           </a>
         </li>
         <li>
