@@ -29,11 +29,11 @@ categories:
 - title: "Study"
   children:
     - title: "Spring boot"
-      url: /categories/boot/
+      url: /categories/study/boot/
     - title: "프로젝트 캠프(React)"
-      url: /categories/udemy/
+      url: /categories/study/udemy/
     - title: "Megaptera"
-      url: /categories/megaptera/
+      url: /categories/study/megaptera/
 
 # - title: Basics
 #   children:
