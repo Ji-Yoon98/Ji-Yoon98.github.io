@@ -27,6 +27,7 @@ categories:
   url: /categories/project/  
   
 - title: "Study"
+  url: /categories/study/  
   children:
     - title: "Spring boot"
       url: /categories/study/boot/
