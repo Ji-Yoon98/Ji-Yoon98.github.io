@@ -23,7 +23,6 @@ categories:
   url: /categories/problem/
 - title: "Project"
   url: /categories/project/  
-  
 - title: "Study"
   children:
     - title: "Spring boot"
