@@ -24,7 +24,13 @@ categories:
 - title: "Project"
   url: /categories/project/  
 - title: "Study"
-  url: /categories/study/
+  children:
+    - title: "Spring boot"
+      url: /categories/boot/
+    - title: "프로젝트 캠프(React)"
+      url: /categories/udemy/
+    - title: "Megaptera"
+      url: /categories/megaptera/
 
 # - title: Basics
 #   children:
