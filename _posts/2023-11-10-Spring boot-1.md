@@ -1,6 +1,6 @@
 ---
-title:  "Spring boot 설치 및 기본설정"
-excerpt: "✨Spring Tools 4, JDK 17✨"
+title:  "Spring Boot 개발환경 세팅(1)"
+excerpt: "✨OpenJDK 17 설치 및 환경 설정✨"
 
 categories:
   - Spring boot
@@ -9,10 +9,10 @@ tags:
 
 permalink: /boot1/
 
-toc: false
+toc: true
 
 date: 2023-11-10
 last_modified_at: 2023-11-10
 ---
 
-## 🌿Spring boot4 설치🌿
+## 🌿OpenJDK 17 설치
