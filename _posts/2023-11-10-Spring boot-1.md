@@ -28,4 +28,4 @@ last_modified_at: 2023-11-10
 
 <img src="/assets/images/installer.png" alt="java" width="80%" itemprop="image">
 
-나는 Window 환경이므로 Windows → x64 Installer 다운로드 했다.
+나는 Window 환경이므로 Windows → x64 Installer를 다운로드 했다.
