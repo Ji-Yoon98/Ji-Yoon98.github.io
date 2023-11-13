@@ -20,7 +20,7 @@ last_modified_at: 2023-11-13
 initializr으로 프로젝트 생성<br/>[바로가기](https://start.spring.io/)
 
 *스프링 부트 3.0부터는 Java17 이상의 버전을 사용
-<img src="initializr.png">
+<img src="/assets/images/initializr.png" alt="sts4" width="80%" itemprop="image">
 
 ✅ Project - 빌드배포 도구 선택
 
