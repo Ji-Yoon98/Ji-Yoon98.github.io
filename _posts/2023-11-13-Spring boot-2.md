@@ -45,7 +45,7 @@ javaw.exe 경로 지정
 - [General] → [Workspace] 에서 Text file encoding → UTF-8
 - [enc]검색 → CSS, HTML, JSP, XML → UTF-8
 
-### 3. JavaEE 플러그인 설치
+### 3. JavaEE 플러그인 설치(필요한 경우)
 
 JSP or JavaScript 파일을 생성 등의 JavaEE 기능을 사용하려면 별도로 설치를 해줘야함.
 
