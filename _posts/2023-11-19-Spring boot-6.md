@@ -93,3 +93,5 @@ public class HomeController {
 		return "content/home";
 	}
 ```
+
+이렇게 하면 공통 레이아웃 설정 완료 !!
