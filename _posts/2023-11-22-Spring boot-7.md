@@ -73,7 +73,7 @@ public class SecurityConfig {
 					.requestMatchers("/admin").hasRole("ADMIN")
 					
 					// ADMIN, USER 권한을 가진 사람만 접속 가능
-					.requestMatchers("/myPage/**", "/purRevBoard/purRevWrite").hasAnyRole("ADMIN","USER")
+					.requestMatchers("/myPage/**", "/purRevWrite").hasAnyRole("ADMIN","USER")
 					.anyRequest().authenticated()
 		    )
 			// 권한이 없는 사람이 접속하려고하면 로그인 페이지로 자동연결 되는데
@@ -99,3 +99,32 @@ public class SecurityConfig {
 }
 
 ```
+
+- @EnableWebSecurity: Spring Security를 활성화하여 웹 보안 설정을 관리하는 어노테이션
+- SecurityFilterChain filterChain(HttpSecurity http): 보안 필터를 커스터마이징하기 위해 빈으로 등록된 메서드, HTTP 보안 설정을 정의
+authorizeHttpRequests(): 특정 URL 경로에 대한 접근 권한을 설정하는 메서드, permitAll()을 통해 무조건 접근을 허용하거나 hasRole() 및 hasAnyRole()을 이용하여 특정 권한을 가진 사용자만 접근을 허용할 수 있다.
+- formLogin(): 로그인 페이지를 지정하는 메서드, 사용자가 로그인하지 않은 상태에서 보호된 페이지에 접근하려고 할 때 자동으로 로그인 페이지로 이동시킴
+- logout(): 로그아웃을 처리하기 위한 메서드, 로그아웃 URL을 설정하여 사용자가 로그아웃할 수 있도록 함.
+- oauth2Login(): OAuth2를 이용한 소셜 로그인 설정을 담당하는 메서드, 소셜 로그인 페이지를 지정
+- BCryptPasswordEncoder passwordEncoder(): 패스워드를 BCrypt 해싱하여 암호화하는 데 사용되는 빈을 등록
+
+이렇게 초기 세팅을 했는데, 
+
+```java
+.requestMatchers("/", "/**.do", "/js/**", "/css/**","/images/**", "/login").permitAll()
+```
+
+이 부분 ``` "/**.do" ```은 권한이 걸려서 권한없이 접근이 가능한 페이지가 접근이 안돼는 이슈가 발생해서 넣게 되었다. <br/>
+근데 생각해보니 프로그래밍은 위에서 부터 아래로 실행 됨.
+
+수정된 코드 👇🏻
+
+```java
+.authorizeHttpRequests((auth) -> auth 
+	.requestMatchers("/admin").hasRole("ADMIN")
+	.requestMatchers("/myPage/**", "/purRevWrite").hasAnyRole("ADMIN","USER")
+	.requestMatchers("/**" , "/js/**", "/css/**","/images/**", "/login").permitAll()
+	.anyRequest().authenticated()
+)
+```
+
