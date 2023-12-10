@@ -128,3 +128,18 @@ authorizeHttpRequests(): 특정 URL 경로에 대한 접근 권한을 설정하�
 )
 ```
 
+- 권한을 한번에 써줘도 괜찮지만 컨트롤러에서도 설정이 가능함
+
+```java
+@GetMapping(value = "/login")
+@PreAuthorize("isAnonymous()")
+public String login(Locale locale, Model model) {
+	return "content/login";
+}
+
+@GetMapping(value = "/cart")
+@PreAuthorize("isAuthenticated()")
+public String cart(Locale locale, Model model) {
+	return "content/cart";
+}
+```
