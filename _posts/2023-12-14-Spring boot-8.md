@@ -94,8 +94,8 @@ public class CustBas implements UserDetails {
 	
 	// 관리자 권한
 	public boolean isAdmin() {
-    return "admin".equals(custId);
-  }
+		return "admin".equals(custId);
+	}
 
 	
 	// 사용자 id 반환
