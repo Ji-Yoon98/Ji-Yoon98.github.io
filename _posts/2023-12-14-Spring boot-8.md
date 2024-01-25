@@ -81,16 +81,16 @@ public class CustBas implements UserDetails {
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		Collection<GrantedAuthority> collection = new ArrayList<>();
 
-        // 모든 회원은 user 권한을 가짐
-        collection.add(new SimpleGrantedAuthority("ROLE_USER"));
-
-        // Id가 admin인 회원은 admin권한도 가짐
-        if (isAdmin()) {
-        	collection.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
-        }
-
-        return collection;
-    }
+	        // 모든 회원은 user 권한을 가짐
+	        collection.add(new SimpleGrantedAuthority("ROLE_USER"));
+	
+	        // Id가 admin인 회원은 admin권한도 가짐
+	        if (isAdmin()) {
+	        	collection.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
+	        }
+	
+	        return collection;
+    	}
 	
 	// 관리자 권한
 	public boolean isAdmin() {
