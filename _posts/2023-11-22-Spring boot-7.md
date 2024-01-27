@@ -1,5 +1,5 @@
 ---
-title:  "Spring Boot Security"
+title:  "Spring Boot Security 설정"
 excerpt: "✨Security 설정하기✨"
 
 categories:
