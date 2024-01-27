@@ -1,5 +1,5 @@
 ---
-title:  "Spring Boot Security"
+title:  "Spring Boot Security 로그인"
 excerpt: "✨Security 로그인 구현✨"
 
 categories:
