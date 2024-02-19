@@ -111,15 +111,15 @@ public CustBas whenSocialLogin(String providerTypeCode, String custId, String cu
 	CustBasDTO request = new CustBasDTO();
 	request.setCustId(custId);
 	// 소셜 로그인를 통한 가입시 비번 X
-    request.setCustPassword("");
-    request.setCustNm(custNm);
-    request.setCustEmail(custEmail);
-    request.setCustNo("Unknown");
+	request.setCustPassword("");
+	request.setCustNm(custNm);
+	request.setCustEmail(custEmail);
+	request.setCustNo("Unknown");
     
-    String uniqueIdfyNo = UUID.randomUUID().toString();
-    request.setCustIdfyNo(uniqueIdfyNo);
+	String uniqueIdfyNo = UUID.randomUUID().toString();
+	request.setCustIdfyNo(uniqueIdfyNo);
        
-    return save(request);
+	return save(request);
 }
 ```
 
