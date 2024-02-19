@@ -21,7 +21,7 @@ last_modified_at: 2023-12-14
 
 [시큐리티 설정 바로가기](https://ji-yoon98.github.io/boot7/)
 
-### 회원 도메인 생성
+### 1. 회원 도메인 생성
 
 ```java
 
@@ -149,7 +149,7 @@ Spring Security에서 사용자 정보를 처리하기 위한 인터페이스인
 - isCredentialsNonExpired(): 사용자의 자격 증명(비밀번호 등)이 만료되었는지 여부를 나타내는 boolean 값을 반환
 - isEnabled(): 계정이 활성화되었는지 여부를 나타내는 boolean 값을 반환
 
-### Repository 생성
+### 2. Repository 생성
 
 ```java
 public interface CustRepository extends JpaRepository<CustBas, Long> {
@@ -157,7 +157,7 @@ public interface CustRepository extends JpaRepository<CustBas, Long> {
 }
 ```
 
-### Service 생성
+### 3. Service 생성
 
 ```java
 @Service
