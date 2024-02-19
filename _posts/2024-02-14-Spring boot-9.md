@@ -163,16 +163,16 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
 			 custEmail = (String) attributes.get("email");
 		 }
 
-     // OAuth2를 통해 인증된 사용자의 고유 식별자
+     		 // OAuth2를 통해 인증된 사용자의 고유 식별자
 		 String oauthId = oAuth2User.getName();
 
 		 // OAuth2 클라이언트의 등록 ID
 		 String providerTypeCode = userRequest.getClientRegistration().getRegistrationId().toUpperCase();
 
-     //  소셜 로그인을 통해 생성된 ID
+     		 //  소셜 로그인을 통해 생성된 ID
 		 String custId = providerTypeCode + "_%s".formatted(oauthId);
 
-     // whenSocialLogin 메서드를 호출
+		 // whenSocialLogin 메서드를 호출
 		 CustBas custBas = custService.whenSocialLogin(providerTypeCode, custId, custNm, custEmail);
 		 
 		 return new CustomOAuth2User(custBas.getCustId(), custBas.getPassword(), custBas.getAuthorities());
