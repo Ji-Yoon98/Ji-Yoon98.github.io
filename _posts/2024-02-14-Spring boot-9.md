@@ -21,8 +21,7 @@ last_modified_at: 2024-02-14
 
 ### 1. 소셜 애플리케이션 등록
 
-[참고]
-https://deeplify.dev/back-end/spring/oauth2-social-login
+[참고](https://deeplify.dev/back-end/spring/oauth2-social-login)
 
 먼저 사용하려는 소셜 플랫폼(예: Google, Facebook, GitHub 등)의 개발자 포털에 들어가서 애플리케이션을 등록. </br>
 등록 과정에서는 클라이언트 ID 및 시크릿 키와 같은 인증 정보를 발급받는다. 
