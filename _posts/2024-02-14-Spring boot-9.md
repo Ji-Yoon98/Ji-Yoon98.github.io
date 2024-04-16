@@ -66,15 +66,14 @@ spring.security.oauth2.client.provider.kakao.user-name-attribute: 사용자 이�
 
 ### 4. SecurityConfig 파일에 oauth2 관련 설정
 
-
-### 5. 로그인 페이지 소셜 로그인 경로 설정
-
-**login.html**
-
 ```java
 // 소셜 로그인 
 .oauth2Login((oauth2) -> oauth2.loginPage("/login"));
 ```
+
+### 5. 로그인 페이지 소셜 로그인 경로 설정
+
+**login.html**
 
 ```html
 <div class="kakao-login">
